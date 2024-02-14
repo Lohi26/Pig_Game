@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pig Game</title>
+        <link rel="icon" type="image/jpg" href="images/pig.jpg">
+    </head>
+    <body>
+        <div>
+            <button class="btn">RULES!</button>
+        </div>
+        
+        <div class="container clearfix">
+            
+            <!-- PLAYER 1 -->
+            <div class="inner-container-1 colour">
+                <div class="play mp-1">PLAYER 1</div>
+                <div class="score ms-1">0</div>
+                <div class="win-score wm-1">
+                    <div class="current-score cs-1">Current</div>
+                    <div class="current-win-score cwm-1">0</div>
+                </div>
+            </div>
+
+            <!-- PLAYER 2 -->
+            <div class="inner-container-2">
+                <div class="play mp-2">PLAYER 2</div>
+                <div class="score ms-2">0</div>
+                <div class="win-score wm-2">
+                    <div class="current-score cs-2">Current</div>
+                    <div class="current-win-score cwm-2">0</div>
+                </div>
+            </div>
+
+
+            <img src="images/dice-2.png" alt="Dice 2" class="rolled">
+            <button class="holding">⏹️Hold On</button>
+            <button class="new-game">Again!</button>
+            <button class="roll-it">🎲Roll Dice!</button>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="rules hidden">
+            <button class="close">&times;</button>
+            <ul>
+                <li>If number 6 or 5 appears to a player the player can repeat 
+                <br> dice roll or else hold and give it to the next player</li>
+                <br>
+                <li> As same as if you obtain 5 or 6 in a roll and the immediate after, 
+                    <br>roll is 1 then the score of 5 or 6 will not be added</li>
+                <br>
+                <li>If number 1 appears it automatically hands over the game to next player</li>
+                <br>
+                <li>After the each dice roll press Hold on to add on your score</li>
+                <br>
+                <li>If anyone of the player obtains the score of 50 points he/she wins🥂 the game</li>
+            </ul>
+            <br><br>
+        </div>
+        <div class="overlay hidden"></div>
+        <h1 class=" result hidden"></h1>
+        <script src="indexjs.js"></script>
+    </body>
+</html>
